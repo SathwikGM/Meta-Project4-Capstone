@@ -1,26 +1,25 @@
-.hero-container {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  background-color: #495E57;
+/* Testimonials container */
+.testimonials-container {
   height: 30rem;
 }
 
-/* description container */
-.hero-desc-container {
-  color: #fff;
-  margin: 2rem;
-  width: 50%;
+.test-header{
+  text-align: center;
 }
 
-/* image conatiner */
-.about-img-container {
-  margin: 1rem;
+/* testinmonial */
+.reviews-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #F4CE14; */
 }
 
-/* image */
-.hero-img {
-  margin: 2rem;
-  height: 350px;
+/* review */
+.reviews{
+  margin: 20px;
+  padding: 10px;
+  height: 25;
+  background-color: #495E57;
   border-radius: 10px;
 }

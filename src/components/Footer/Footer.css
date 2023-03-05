@@ -2,12 +2,14 @@
 /* Footer container */
 .footer-container{
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  
+  background-color: #FBDABB;
+  height: 15rem;
 }
 
 
 /* Footer Logo */
 .footer-logo{
-  height: 200px;
+  height: 10rem;
 }
