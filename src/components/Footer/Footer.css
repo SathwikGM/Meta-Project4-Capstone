@@ -1,0 +1,13 @@
+
+/* Footer container */
+.footer-container{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+
+/* Footer Logo */
+.footer-logo{
+  height: 200px;
+}

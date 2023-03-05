@@ -1,0 +1,28 @@
+/* highlight container */
+.highlights-container {
+  height: 40rem;
+}
+/* description */
+.high-desc-container{
+  margin-left: 7rem;
+}
+
+/* special container */
+.specials-container {
+  display: flex;
+  align-items: start;
+  justify-content: space-evenly;
+}
+
+/* special */
+.special {
+  padding: 20px;
+  width: 20rem;
+  margin: 20px;
+  background-color: #EDEFEE;
+}
+
+/* image */
+.special-img {
+  height: 200px;
+}

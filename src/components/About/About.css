@@ -1,0 +1,28 @@
+/* About container */
+.about-container{
+  display: flex;
+  margin: 2rem;
+}
+
+/* description container */
+.about-desc-container{
+  width: 50%;
+}
+
+/* image conatiner */
+.about-img-container{
+  position: relative  ;
+}
+
+/* to provide img propertis */
+.about-img{
+  height: 200px;
+}
+
+/* to place image on one another */
+.over-img {
+  margin: 4rem;
+  position: absolute;
+  top: -50%;
+  left: 60%;
+}

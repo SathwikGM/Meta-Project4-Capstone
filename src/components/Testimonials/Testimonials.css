@@ -1,0 +1,26 @@
+.hero-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-color: #495E57;
+  height: 30rem;
+}
+
+/* description container */
+.hero-desc-container {
+  color: #fff;
+  margin: 2rem;
+  width: 50%;
+}
+
+/* image conatiner */
+.about-img-container {
+  margin: 1rem;
+}
+
+/* image */
+.hero-img {
+  margin: 2rem;
+  height: 350px;
+  border-radius: 10px;
+}

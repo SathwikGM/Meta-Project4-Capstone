@@ -1,0 +1,21 @@
+.nav-container{
+  display: flex;
+}
+.container{
+  margin-left: auto;
+  display: flex;
+}
+li{
+
+  list-style: none; 
+
+}
+
+a{
+  font-family: 'Markazi Text', serif;
+  font-size: 1.5rem;
+  margin: 2rem  ;
+  text-decoration: none;
+  color: #495E57;
+
+}

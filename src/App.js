@@ -7,12 +7,12 @@ import './App.css';
 function App() {
   return (
     <>
-      <Header />
-      <Nav />
-      <Main />
-      <Footer />
-
-      <h1>Homepage</h1>
+      <section className=''>
+        <Header />
+        <Nav />
+        <Main />
+        <Footer />
+      </section>
     </>
   );
 }
