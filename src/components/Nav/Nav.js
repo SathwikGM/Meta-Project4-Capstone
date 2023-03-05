@@ -1,3 +1,5 @@
+import { Outlet, Link } from "react-router-dom";
+import Footer from '../Footer/Footer';
 import './Nav.css';
 import Logo from '../../assets/Logo.svg';
 
@@ -7,14 +9,16 @@ const Nav = () => {
       <nav className='nav-container'>
         <img src={Logo} alt="Lemon Logo" />
         <ul className='container'>
-          <li><a href="/html/">HOME</a></li>
-          <li><a href="/html/">ABOUT</a></li>
-          <li><a href="/html/">MENU</a></li>
-          <li><a href="/html/">RESERVATIONS</a></li>
-          <li><a href="/html/">ORDER ONLINE</a></li>
-          <li><a href="/html/">LOGIN</a></li>
+          <li><Link to="/">HOME</Link></li>
+          <li><Link to="/about">ABOUT</Link></li>
+          <li><Link to="/menu">MENU</Link></li>
+          <li><Link to="/reservations">RESERVATIONS</Link></li>
+          <li><Link to="/orderonline">ORDER ONLINE</Link></li>
+          <li><Link to="/login">LOGIN</Link></li>
         </ul>
       </nav>
+      <Outlet />
+      <Footer />
     </>
   );
 }

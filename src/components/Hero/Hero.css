@@ -1,3 +1,10 @@
+@media screen and (max-width: 960px) {
+  .hero-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .hero-container{
   display: flex;
   justify-content:start;

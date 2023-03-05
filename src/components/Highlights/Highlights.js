@@ -14,7 +14,7 @@ const specials = [
   },
   {
     image: Bruschetta,
-    dish: 'GBruschetta',
+    dish: 'Bruschetta',
     price: '$10.99',
     description: 'ebfbbfbwueofwv',
     button: 'Order for Delivery',

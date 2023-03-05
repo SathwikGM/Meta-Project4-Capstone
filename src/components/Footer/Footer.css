@@ -8,6 +8,14 @@
   height: 15rem;
 }
 
+/* media query */
+@media screen and (max-width: 960px) {
+  .footer-container {
+    flex-direction: column;
+    height: 45rem;
+  }
+}
+
 
 /* Footer Logo */
 .footer-logo{
