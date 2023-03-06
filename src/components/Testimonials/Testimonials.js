@@ -38,7 +38,7 @@ const Testimonials = () => {
         {
           testimonials.map((testimonial) => {
             return (
-              <div className='reviews'>
+              <div className='reviews' key={testimonial.image}>
                 <img className='special-img' src={testimonial.image} alt='' />
                 <h4>{testimonial.name}</h4>
                 <p>{testimonial.rating}</p>

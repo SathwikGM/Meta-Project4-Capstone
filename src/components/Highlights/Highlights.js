@@ -40,7 +40,7 @@ const Highlights = () => {
         {
           specials.map((special) => {
             return (
-              <div className='special'>
+              <div className='special' key={special.dish}>
                 <img className='special-img' src={special.image} alt='' />
                 <h3>{special.dish}</h3>
                 <p>{special.price}</p>

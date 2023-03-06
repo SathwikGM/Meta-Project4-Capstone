@@ -2,14 +2,21 @@
 
 h1{
   font-size: 40px;
+  font-family: 'Markazi Text', serif;
 
 }
-h1 {
+h2 {
   font-size: 30px;
+  font-family: 'Markazi Text', serif;
 
+}
+h3 {
+  font-size: 25px;
+  font-family: 'Markazi Text', serif;
 }
 h4{
   font-size: 25px;
+  font-family: 'Markazi Text', serif;
 }
 
 p{

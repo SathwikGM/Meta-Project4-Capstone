@@ -1,0 +1,35 @@
+/* About container */
+.about-page-container {
+  display: flex;
+  background-color: #495E57;
+  height: 80vh;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* description container */
+.about-page-desc-container {
+  width: 50%;
+  margin: 20px;
+  padding: 20px;
+  background-color: aliceblue;
+  border-radius: 20px;
+}
+
+/* image conatiner */
+.about-page-img-container {
+  position: relative;
+}
+
+/* to provide img propertis */
+.about-page-img {
+  height: 200px;
+}
+
+/* to place image on one another */
+.over-page-img {
+  margin: 4rem;
+  position: absolute;
+  top: -50%;
+  left: 60%;
+}

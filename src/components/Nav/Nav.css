@@ -31,3 +31,10 @@ a{
   color: #495E57;
 
 }
+a:hover {
+  color: #F4CE14;
+  background-color: #495E57;
+  padding: 0 10px;
+  border-radius: 10px;
+
+}
