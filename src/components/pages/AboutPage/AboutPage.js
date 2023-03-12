@@ -1,5 +1,5 @@
-import OwnerPhotoOne from '../../assets/Mario and Adrian A.jpg';
-import OwnerPhotoTwo from '../../assets/Mario and Adrian b.jpg';
+import OwnerPhotoOne from '../../../assets/Mario and Adrian A.jpg';
+import OwnerPhotoTwo from '../../../assets/Mario and Adrian b.jpg';
 import './AboutPage.css'
 
 const AboutPage = () => {

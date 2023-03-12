@@ -1,12 +1,12 @@
 import { Routes, Route } from "react-router-dom";
 
 import Nav from './components/Nav/Nav';
-import Home from './pages/Home/Home';
-import About from "./pages/AboutPage/AboutPage";
-import Menu from "./pages/Menu/Menu";
-import Reservations from "./pages/Reservations/Reservations";
-import OrderOnline from "./pages/OrderOnline/OrderOnline";
-import Login from "./pages/Login/Login";
+import Home from './components/pages/Home/Home';
+import About from "./components/pages/AboutPage/AboutPage";
+import Menu from "./components/pages/Menu/Menu";
+import Reservations from "./components/pages/Reservations/Reservations";
+import OrderOnline from "./components/pages/OrderOnline/OrderOnline";
+import Login from "./components/pages/Login/Login";
 
 
 import './App.css';
