@@ -29,7 +29,7 @@ const BookingForm = (props) => {
 
 
   return (
-    <>
+    <><h2 className="booking">Book Now</h2>
       <form className='booking-form' onSubmit={handleSubmit}>
         <label htmlFor="res-date">Choose date</label>
         <input type="date"

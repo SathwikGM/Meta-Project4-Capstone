@@ -5,7 +5,11 @@
   align-items: center;
   justify-content: space-between;
   background-color: #FBDABB;
-  height: 12rem;
+  height: 200px;
+  /* position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%; */
 }
 
 /* media query */
