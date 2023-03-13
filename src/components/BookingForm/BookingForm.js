@@ -5,16 +5,16 @@ const currentDate = new Date();
 const formattedDate = currentDate.toISOString().slice(0, 10);
 
 const BookingForm = (props) => {
-  const { availableTimes, dispatch } = props;
-
+  const { availableTimes, dispatch, submitForm } = props;
+  const [formData, setFormData] = useState({})
   const [date, setDate] = useState(formattedDate);
-  const [guests, setGuests] = useState("");
-  const [occasion, setOccasion] = useState("");
+  const [guests, setGuests] = useState(2);
+  const [occasion, setOccasion] = useState("Birthday");
   const [resTime, setResTime] = useState(
     availableTimes.map((time) => <option key={time} value={time}>{time} </option>)
   );
 
-  function handleDateChange(event) {
+  const handleDateChange = (event) => {
     const date = event.target.value
     dispatch({ type: 'UPDATE_TIMES', payload: date });
     setDate(date);
@@ -22,9 +22,13 @@ const BookingForm = (props) => {
 
   }
 
+
+
   // controlling form default brhaviour
   const handleSubmit = (event) => {
     event.preventDefault();
+    setFormData(event)
+    submitForm(formData)
   }
 
 
@@ -36,14 +40,15 @@ const BookingForm = (props) => {
           id="res-date"
           name="date"
           value={date}
+
           onChange={handleDateChange} />
         <label htmlFor="res-time">Choose time</label>
         <select id="time">
           {resTime}
         </select>
         <label htmlFor="guests">Number of guests</label>
-        <input type="number" placeholder="1"
-          min="1" max="10"
+        <input type="number" placeholder="Number of People"
+          min="2" max="10"
           id="guests"
           name="guests"
           value={guests}

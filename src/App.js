@@ -7,6 +7,7 @@ import Menu from "./components/pages/Menu/Menu";
 import Reservations from "./components/pages/Reservations/Reservations";
 import OrderOnline from "./components/pages/OrderOnline/OrderOnline";
 import Login from "./components/pages/Login/Login";
+import ConfirmedBooking from "./components/ConfirmedBooking/ConfirmedBooking";
 
 
 import './App.css';
@@ -22,6 +23,7 @@ function App() {
           <Route path="reservations" element={<Reservations />} />
           <Route path="orderOnline" element={<OrderOnline />} />
           <Route path="login" element={<Login />} />
+          <Route path="/confirmation" element={< ConfirmedBooking />} />
         </Route>
       </Routes>
     </>
