@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import HeroLogo from '../../assets/Food.png';
 import './Hero.css'
 const Hero = () => {
@@ -11,7 +12,7 @@ const Hero = () => {
         <p>Lorem ipsum, dolor sit amet consectetur
           Lorem ipsum, dolor sit amet consectetur</p>
 
-        <button>Reserve a Table</button>
+        <Link to="/reservations"><button>Reserve a Table</button></Link>
       </div>
       <div className='hero-img-container'>
         <img className='hero-img' src={HeroLogo} alt="Lemon Logo" />
