@@ -1,18 +1,23 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import './BookingForm.css'
 const currentDate = new Date();
 const formattedDate = currentDate.toISOString().slice(0, 10);
 
 const BookingForm = (props) => {
-  const { availableTimes, dispatch, submitForm } = props;
+
   const [formData, setFormData] = useState({})
   const [date, setDate] = useState(formattedDate);
   const [guests, setGuests] = useState(2);
   const [occasion, setOccasion] = useState("Birthday");
-  const [resTime, setResTime] = useState(
-    availableTimes.map((time) => <option key={time} value={time}>{time} </option>)
-  );
+  const { availableTimes, dispatch, submitForm } = props;
+  const [resTime, setResTime] = useState([]);
+  useEffect(() => {
+    if (availableTimes) {
+      setResTime(availableTimes.map((time) => <option key={time} value={time}>{time}</option>));
+    }
+  }, [availableTimes]);
+
 
   const handleDateChange = (event) => {
     const date = event.target.value
@@ -46,8 +51,8 @@ const BookingForm = (props) => {
         <select id="time">
           {resTime}
         </select>
-        <label htmlFor="guests">Number of guests</label>
-        <input type="number" placeholder="Number of People"
+        <label htmlFor="guests">guests</label>
+        <input type="number" placeholder="guests"
           min="2" max="10"
           id="guests"
           name="guests"

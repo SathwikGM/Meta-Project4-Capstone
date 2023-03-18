@@ -9,19 +9,11 @@ test('Renders the BookingForm heading', () => {
 
 // Form validation
 
-// describe("Reservation Form", () => {
-//   test("fenfn", () => {
-//     render(<BookingForm />);
-//     const guests = 2;
-//     const handleSubmit = jest.fn();
-//     const numberOfGuest = screen.getAllByLabelText(/Number of guests:/)
-//     fireEvent.change(numberOfGuest, { target: { value: guests } });
-
-//     const submitButton = screen.getByRole("button");
-//     fireEvent.click(submitButton);
-
-//     expect(handleSubmit).toHaveBeenCalledWith({
-//       guests,
-//     });
-//   });
-// });
+describe('BookingForm', () => {
+  test('displays the number of guests', () => {
+    render(<BookingForm />);
+    const input = screen.getByLabelText("guests");
+    fireEvent.change(input, { target: { value: '4' } });
+    expect(input.value).toBe('4');
+  });
+});
