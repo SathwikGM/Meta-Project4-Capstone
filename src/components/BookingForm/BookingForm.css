@@ -2,15 +2,31 @@
   text-align: center;
 }
 
-
+/* Label */
+.booking-label{
+  font-family: 'Markazi Text', serif;
+  color: #495E57;
+  margin: 10px;
+  padding: 10px;
+  font-size: 25px;
+  
+}
+/* input */
+.booking-input{
+  margin: 10px;
+  padding: 10px;
+  font-size: 25px;
+  border-radius: 10px;
+  border: 2px solid #495E57;
+}
 .booking-form{
   border: 2px solid;
- 
   display: flex;
   flex-direction: column;
   margin: auto;
   padding:2px;
   width: 500px;
-  height: 70vh;
+  border-radius: 10px;
   font-size: larger;
+  border: 2px solid #495E57;
 }

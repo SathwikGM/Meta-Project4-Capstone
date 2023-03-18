@@ -1,6 +1,8 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import './BookingForm.css'
+import './BookingForm.css';
+import Button from '../Button/Button';
+
 const currentDate = new Date();
 const formattedDate = currentDate.toISOString().slice(0, 10);
 
@@ -40,33 +42,33 @@ const BookingForm = (props) => {
   return (
     <><h2 className="booking">Book Now</h2>
       <form className='booking-form' onSubmit={handleSubmit}>
-        <label htmlFor="res-date">Choose date</label>
-        <input type="date"
+        <label className="booking-label" htmlFor="res-date">Choose date</label>
+        <input className="booking-input" type="date"
           id="res-date"
           name="date"
           value={date}
 
           onChange={handleDateChange} />
-        <label htmlFor="res-time">Choose time</label>
-        <select id="time">
+        <label className="booking-label" htmlFor="res-time">Choose time</label>
+        <select className="booking-input" id="time">
           {resTime}
         </select>
-        <label htmlFor="guests">guests</label>
-        <input type="number" placeholder="guests"
+        <label className="booking-label" htmlFor="guests">guests</label>
+        <input className="booking-input" type="number" placeholder="guests"
           min="2" max="10"
           id="guests"
           name="guests"
           value={guests}
           onChange={(e) => { setGuests(e.target.value); }}
         />
-        <label htmlFor="occasion">Occasion</label>
-        <select id="occasion" name="occasion"
+        <label className="booking-label" htmlFor="occasion">Occasion</label>
+        <select className="booking-input" id="occasion" name="occasion"
           value={occasion}
           onChange={(e) => { setOccasion(e.target.value) }}>
           <option>Birthday</option>
           <option>Anniversary</option>
         </select>
-        <button type="submit">Make Your reservation</button>
+        <Button type="submit" buttonName="Make your reservation" />
       </form>
     </>
   );

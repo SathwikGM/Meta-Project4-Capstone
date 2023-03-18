@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import "./Login.css"
+import Button from '../../Button/Button';
 
 const Login = () => {
   const [inputs, setInputs] = useState({});
@@ -13,7 +14,7 @@ const Login = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(inputs)
+    setInputs('')
   }
   return (
     <div>
@@ -37,7 +38,7 @@ const Login = () => {
             onChange={handleChange}
             required></input>
 
-          <button type="submit">Login</button>
+          <Button type="submit" buttonName="Login" />
         </div>
       </form>
     </div>);

@@ -1,0 +1,35 @@
+/* Card container */
+.card-container{
+  display: flex;
+  flex-flow: row wrap;
+  border: 2px solid;
+  margin: 10px;
+  padding: 10px;
+}
+
+/* Individual card container */
+.card-element-container{
+  height: 450px;
+  width:250px ;
+  border: 2px solid;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  justify-content:center;
+  align-items: center;
+  background-color: #EE9972;
+}
+
+/* image */
+.card-image{
+  width: 15rem;
+  height: 10rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* card elements */
+.card-element{
+  padding: 10px;
+}
