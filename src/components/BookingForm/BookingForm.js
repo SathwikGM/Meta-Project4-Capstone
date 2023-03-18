@@ -13,18 +13,31 @@ const BookingForm = (props) => {
   const [guests, setGuests] = useState(2);
   const [occasion, setOccasion] = useState("Birthday");
   const { availableTimes, dispatch, submitForm } = props;
-  const [resTime, setResTime] = useState([]);
+  const [resTime, setResTime] = useState([])
+
   useEffect(() => {
-    if (availableTimes) {
-      setResTime(availableTimes.map((time) => <option key={time} value={time}>{time}</option>));
+    if (Array.isArray(availableTimes)) {
+      setResTime(
+        availableTimes.map((time) => (
+          <option key={time} value={time}>
+            {time}
+          </option>
+        ))
+      );
     }
   }, [availableTimes]);
 
 
   const handleDateChange = (event) => {
-    const date = event.target.value
-    dispatch({ type: 'UPDATE_TIMES', payload: date });
-    setDate(date);
+
+    const date = new Date(event.target.value)
+    // console.log(date)
+    // console.log(new Date())
+
+    setDate(event.target.value);
+
+    dispatch({ type: 'UPDATE_TIMES', payload: { date } });
+
     setResTime(availableTimes.map((time) => <option key={time} value={time}>{time} </option>))
 
   }
@@ -47,7 +60,6 @@ const BookingForm = (props) => {
           id="res-date"
           name="date"
           value={date}
-
           onChange={handleDateChange} />
         <label className="booking-label" htmlFor="res-time">Choose time</label>
         <select className="booking-input" id="time">

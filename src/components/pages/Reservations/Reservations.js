@@ -5,26 +5,30 @@ import { useNavigate } from "react-router-dom";
 import './Reservation.css'
 
 
+// Update time function to provide to the useReducer hook
+const updateTimes = async (date, action) => {
 
+  switch (action.type) {
+    case 'UPDATE_TIMES':
+
+      const newTimes = await fetchAPI(action.payload.date);
+      return newTimes;
+    default:
+      return date;
+  }
+
+}
 
 
 const Reservations = () => {
-  // Update time function to provide to the useReducer hook
-  const updateTimes = async (date, action) => {
-    switch (action.type) {
-      case 'UPDATE_TIMES':
-        const newTimes = await fetchAPI(date);
-        return newTimes;
-      default:
-        return date;
-    }
 
-  }
 
   // Initializing the time to provide to the useReducer hook
-  const initializeTimes = (date) => fetchAPI(new Date());
+  const initializeTimes = fetchAPI(new Date());
 
-  const [availableTimes, dispatch] = useReducer(updateTimes, [], initializeTimes);
+
+
+  const [availableTimes, dispatch] = useReducer(updateTimes, initializeTimes);
   const navigate = useNavigate();
   // submitting the form data
   const submitForm = (formData) => {
