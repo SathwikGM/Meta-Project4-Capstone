@@ -1,5 +1,5 @@
 import './Footer.css';
-import Logo from '../../assets/Asset 20@4x.png';
+import Logo from '../../../assets/Asset 20@4x.png';
 const Footer = () => {
   return (<>
     <footer className='footer-container'>

@@ -1,5 +1,5 @@
 import "./Card.css";
-import { menu } from '../pages/Menu/Food'
+import { menu } from '../../pages/Menu/Food'
 import Button from "../Button/Button"
 
 import React from 'react'

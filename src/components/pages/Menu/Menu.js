@@ -1,5 +1,5 @@
-import Card from "../../Card/Card"
-import Hero from "../../Hero/Hero"
+import Card from "../../common/Card/Card"
+import Hero from "../../common/Hero/Hero"
 import './Menu.css'
 
 const Menu = () => {

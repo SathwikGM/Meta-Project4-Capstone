@@ -1,7 +1,7 @@
 
-import GreekSalad from '../../assets/greek salad.jpg';
-import Bruschetta from '../../assets/bruchetta.svg';
-import LemonDessert from '../../assets/lemon dessert.jpg';
+import GreekSalad from '../../../assets/greek salad.jpg';
+import Bruschetta from '../../../assets/bruchetta.svg';
+import LemonDessert from '../../../assets/lemon dessert.jpg';
 import './Highlights.css'
 
 const specials = [
