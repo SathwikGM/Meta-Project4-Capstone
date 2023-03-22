@@ -17,7 +17,6 @@ const Hero = () => {
       </div>
       <div className='hero-img-container'>
         <img className='hero-img' src={HeroLogo} alt="Lemon Logo" />
-
       </div>
     </section>
   </>)

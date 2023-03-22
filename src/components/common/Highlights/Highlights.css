@@ -1,17 +1,9 @@
-@media screen and (max-width: 960px) {
-  .highlights-container, .specials-container{
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
 /* highlight container */
 .highlights-container {
-  height: 40rem;
+  background-color: #fff;
 }
 /* description */
-.high-desc-container{
+.high-desc-container {
   margin-left: 7rem;
 }
 
@@ -24,13 +16,33 @@
 
 /* special */
 .special {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  justify-content: center;
   padding: 20px;
   width: 20rem;
   margin: 20px;
-  background-color: #EDEFEE;
+  background-color: #FBDABB;
 }
 
 /* image */
-.special-img {
+.special-img{
   height: 200px;
+  width: 100%;
+}
+
+.special .special-btn{
+  align-self: center;
+}
+
+@media screen and (max-width: 600px) {
+
+  .highlights-container,
+  .specials-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }

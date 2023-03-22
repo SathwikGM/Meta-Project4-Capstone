@@ -1,16 +1,9 @@
-@media screen and (max-width: 960px) {
-  .hero-container {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-}
 .hero-container{
+  
   display: flex;
   justify-content: flex-start;
   align-items: center;
   background-color:#495E57 ;
-  height: 30rem;
 }
 
 /* description container */
@@ -30,4 +23,21 @@
   margin: 2rem;
   height: 350px;
   border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  .hero-container{
+    flex-direction: column;
+    height: 100%;
+  }
+  .hero-desc-container {
+      color: #fff;
+      margin: 0.5rem;
+      width: 100%;
+      padding: 0.5rem;
+  }
+  .hero-img{
+    width: 100%;
+    margin: auto;
+  }
 }

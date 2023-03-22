@@ -1,4 +1,5 @@
-
+import { Link } from "react-router-dom";
+import Button from '../Button/Button';
 import GreekSalad from '../../../assets/greek salad.jpg';
 import Bruschetta from '../../../assets/bruchetta.svg';
 import LemonDessert from '../../../assets/lemon dessert.jpg';
@@ -34,18 +35,23 @@ const Highlights = () => {
     <section className='highlights-container'>
       <div className='high-desc-container'>
         <h2>This Weeks Specials</h2>
-        <button>Online Menu</button>
+        <Link to="/menu"> <Button buttonName="Online Menu" /></Link>
       </div>
       <div className='specials-container'>
         {
           specials.map((special) => {
             return (
               <div className='special' key={special.dish}>
-                <img className='special-img' src={special.image} alt='' />
-                <h3>{special.dish}</h3>
-                <p>{special.price}</p>
-                <p>{special.description}</p>
-                <button>{special.button}</button>
+                <div className='special-img'>
+                  <img className='special-img' src={special.image} alt='' />
+                </div>
+                <div>
+                  <h3>{special.dish}</h3>
+                  <p>{special.price}</p>
+                  <p>{special.description}</p></div>
+                <div special-btn>
+                  <Button buttonName={special.button} />
+                </div>
               </div>
             );
           })
