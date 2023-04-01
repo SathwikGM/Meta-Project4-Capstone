@@ -6,9 +6,9 @@ const Menu = () => {
   return (
     <div>
       <Hero />
-      <h2>Menu</h2>
+      {/* <h2>Menu</h2> */}
 
-      <Card />
+      {/* <Card /> */}
     </div>);
 }
 

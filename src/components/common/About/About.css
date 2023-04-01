@@ -1,7 +1,11 @@
 /* About container */
 .about-container{
   display: flex;
-  margin: 2rem;
+  min-height: 22rem;
+  align-items: center;
+ 
+/* 
+  background-color: aquamarine; */
 }
 
 /* description container */
@@ -11,11 +15,13 @@
 
 /* image conatiner */
 .about-img-container{
+  margin: 4rem;
   position: relative  ;
 }
 
 /* to provide img propertis */
 .about-img{
+ 
   height: 200px;
 }
 
@@ -25,4 +31,19 @@
   position: absolute;
   top: -50%;
   left: 60%;
+}
+
+@media screen and (max-width: 600px) {
+
+  .about-container
+   {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .about-img {
+    height: 200px;
+    width: 100px;
+
+  }
 }

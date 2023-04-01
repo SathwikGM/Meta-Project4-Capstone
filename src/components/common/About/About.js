@@ -5,6 +5,7 @@ import './About.css'
 const About = () => {
   return (<>
     <section className='about-container'>
+
       <div className='about-desc-container'>
         <h2>Little Lemon</h2>
         <h4>Chicago</h4>
@@ -17,6 +18,7 @@ const About = () => {
         <img className='about-img' src={OwnerPhotoOne} alt="Lemon Logo" />
         <img className='about-img over-img' src={OwnerPhotoTwo} alt="Lemon Logo" />
       </div>
+
     </section>
 
   </>)

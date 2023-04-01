@@ -1,22 +1,25 @@
 
 /* Footer container */
 .footer-container{
+  min-height: 10rem;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   background-color: #FBDABB;
-  height: 200px;
-  /* position: fixed;
+  padding: 20px;
+  margin-top: auto;
+  position: relative;
   left: 0;
   bottom: 0;
-  width: 100%; */
+  width: 100%;
 }
 
 /* media query */
-@media screen and (max-width: 960px) {
+@media (max-width: 600px) {
   .footer-container {
     flex-direction: column;
-    height: 45rem;
+    align-items: center;
+    justify-content: flex-start;
   }
 }
 
@@ -24,4 +27,16 @@
 /* Footer Logo */
 .footer-logo{
   height: 10rem;
+}
+
+.footer-link-container li{
+ list-style: none;
+}
+
+.footer-link-container li a{
+  font-family: 'Markazi Text', serif;
+  text-decoration: none;
+  color: #495E57;
+  font-size: 1.5rem;
+  padding: 1rem;
 }
